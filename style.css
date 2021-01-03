@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  padding: 0;
+  font-style: uniform;
+  }
+  
+  /* Định dạng header */
+.header img{
+  width: 100%;
+  height: 100px;
+  }
+  /* Định dạng thanh điều hướng trên cùng */
+  .topnav {
+      text-transform: uppercase;
+    overflow: hidden;
+    background-color: rgba(0, 128, 0, 0.795);
+    height: 60px;
+  }
+  .topnav ul li{
+      display: inline-block;
+      /* margin-top: -10px; */
+      margin: -10px 0 0px 20px;
+  }
+  .topnav ul li a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .topnav ul li a:hover {
+    color: white;
+    font-weight: bold
+  }
+  .topnav ul li .a1{
+    border-right: 2px dotted #f1f1f1a8;
+    width: 200px;
+}
+.topnav ul li .a2{
+    border-right: 2px dotted #f1f1f1a8;
+    width: 200px;
+}
+.topnav ul li .a3{
+    border-right: 2px dotted #f1f1f1a8;
+    width: 200px;
+}
+.topnav ul li .a4{
+    border-right: 2px dotted #f1f1f1a8;
+    width: 200px;
+}
+.topnav ul li .a5{
+    border-right: 2px dotted #f1f1f1a8;
+    width: 200px;
+}
+.topnav ul li .a6{
+    width: 200px;
+}
+  /* Cột bên trái và phải */
+  .column.side {
+    width: 19%;
+    float: left;
+    background-color:rgba(16, 83, 16, 0.123);
+    margin-top: 5px;
+    position: relative;
+  }
+span{
+      color: green;
+      text-transform: uppercase;
+      font-weight: 700;
+  }
+.khoi1{
+    position: absolute;
+    padding: 12px 118px;
+    top: 0;
+    left: -114px;
+    background-color: rgba(128, 238, 84, 0.514);
+}
+.khoi2{
+    position: absolute;
+    padding: 12px 205px;
+    top: 200px;
+    left: -205px;
+    background-color: rgba(128, 238, 84, 0.514);
+}
+.column.side ul{
+    padding-top: 30px;
+    padding-left: 25px;
+}
+  .column.side ul li{
+    list-style-type: square ;
+    line-height: 30px;
+  }
+.column.side ul li a{
+    color:green;
+    font-weight: 600;
+    text-decoration: none;
+}
+  /* Cột chính giữa */
+  .column.middle {
+ width: 100%;
+ position: relative;
+ 
+  }
+.hinh1 img{
+    margin-left: -80px;
+    margin-bottom: 52px;
+    
+  }
+.p1{
+    color:red;
+    position: absolute;
+    left: 23rem;
+    top: 12.5rem;
+}
+.nut1{
+    color:red;
+    background-color:rgba(128, 238, 84, 0.514);
+    border: rgba(128, 238, 84, 0.514);cursor: pointer;
+    float: left;
+    margin-top: 245px;
+    margin-left: 92px;
+}
+.nut2{
+    color:white;
+    background-color:rgb(236, 42, 74);
+    border: rgba(128, 238, 84, 0.514); cursor: pointer;
+    margin-top: 245px;
+    margin-left: -110px;
+}
+.hinh2 img{
+    position: absolute;
+    top: 10px;
+    left: 45rem;
+}
+.p2{
+    color:red;
+    position: absolute;
+    left: 45rem;
+    top: 12.5rem;
+}
+.nut3{
+    color:red;
+    background-color:rgba(128, 238, 84, 0.514);
+    border: rgba(128, 238, 84, 0.514);cursor: pointer;
+    position: absolute;
+    top: 15.2rem;
+    left: 46rem;
+}
+.nut4{
+    color:white;
+    background-color:rgb(236, 42, 74);
+    border: rgba(128, 238, 84, 0.514); cursor: pointer;
+    position: absolute;
+    top: 15.2rem;
+    left: 49.4rem;
+}
+.hinh3 img{
+    position: absolute;
+    top: 10px;
+    left: 65rem;
+}
+.p3{
+    color:red;
+    position: absolute;
+    left: 69rem;
+    top: 12.5rem;
+}
+.nut5{
+    color:red;
+    background-color:rgba(128, 238, 84, 0.514);
+    border: rgba(128, 238, 84, 0.514);cursor: pointer;
+    position: absolute;
+    top: 15.2rem;
+    left: 70rem;
+}
+.nut6{
+    color:white;
+    background-color:rgb(236, 42, 74);
+    border: rgba(128, 238, 84, 0.514); cursor: pointer;
+    position: absolute;
+    top: 15.2rem;
+    left: 73.4rem;
+}
+  /* Clear float khác sau các cột */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Bố cục linh hoạt: ba cột xếp chồng lên nhau thay vì cạnh nhau khi màn hình 
+  có chiều rộng dưới 600px */
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+  }
+  }
+  
+  /* Định dạng footer */
+  .footer {
+    background-color: #e9d8f4;
+    color: #58257b;
+    padding: 5px;
+    text-align: center;
+  }
